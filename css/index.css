@@ -1,0 +1,105 @@
+/***************通用样式***************/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #0f0f0f;
+}
+
+/***************头部样式***************/
+#ss_header {
+
+}
+
+#ss_header .top-bar {
+    height: 40px;
+    line-height: 39px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#ss_header .top-bar .container .row > div + div {
+    border-left: 1px solid #e0e0e0;
+}
+
+#ss_header .top-bar .container .row .top-bar-1 a {
+    position: relative;
+}
+
+#ss_header .top-bar .container .row .top-bar-1 a img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -10px;
+    z-index: 99999;
+}
+
+#ss_header .top-bar .container .row .top-bar-1 a:hover img {
+    display: block;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.svg') format('svg'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff');
+}
+
+[class ^="icon-"],
+[class *=" icon-"] {
+    font-family: myFirstFont;
+    font-style: normal;
+}
+
+.icon-phone::before {
+    content: '\e958';
+    font-size: 13px;
+}
+
+.icon-tel::before {
+    content: '\e942';
+    font-size: 13px;
+}
+
+#ss_header .navbar-ss {
+    background-color: #fff;
+    margin-bottom: 0;
+}
+
+#ss_header .navbar-ss .navbar-nav li.active a,
+#ss_header .navbar-ss .navbar-nav li a:hover {
+    background-color: transparent;
+    border-bottom: 2px solid #31b0d5;
+}
+
+/***************关于我们的样式***************/
+#ss_about {
+    padding: 20px 0;
+}
+
+#ss_about .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+#ss_about .row p {
+    line-height: 30px;
+    font-size: 15px;
+    position: relative;
+}
+
+ .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
